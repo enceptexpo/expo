@@ -15,10 +15,17 @@ clearInfo();
 	});
 	reception1.addEventListener("click", function(){
 		clearInfo();
-		$(".registerForm").fadeIn();
+		$('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 29.015').attr('animation__r', 'property:rotation; dur:1000; to:0 -90 0');
+		setTimeout(function(){
+			$(".registerForm").fadeIn();
+		}, 1500);
+
 	});
 	$(".registerForm .close, .enterExpo").click(function(){
 		$(".registerForm").fadeOut();
+		$('.camera1').removeAttr("animation, animation__r");
+$('.camera1').attr('animation__r', 'property:rotation; dur:500; to:0 0 0');
+
 	});
 function clearInfo(){
 $(".expoinfo").hide().find("p").empty();
