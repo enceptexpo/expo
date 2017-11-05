@@ -1,36 +1,57 @@
+$(document).ready(function() {
+    var reception1 = document.querySelector("#receptionm");
+    var stall1 = document.querySelector("#stall1m");
+    document.querySelector('a-assets').addEventListener('loaded', function() {
+        $(".bubblingG").hide();
+    });
 
+    /*for recetion start*/
 
+    reception1.addEventListener("mouseenter", function() {
+        $(".expoinfo").show().find("p").append("Click here to register");
+    });
 
+    reception1.addEventListener("mouseleave", function() {
+        clearInfo();
+    });
 
- $(document).ready(function() {
- 	var reception1 = document.querySelector("#receptionm");
-	 	document.querySelector('a-assets').addEventListener('loaded', function () {
-	  $(".bubblingG").hide();
-	});
-	reception1.addEventListener("mouseenter", function(){
-$(".expoinfo").show().find("p").append("Click here to register");
-	});
-	reception1.addEventListener("mouseleave", function(){
-clearInfo();
-	});
-	reception1.addEventListener("click", function(){
-		clearInfo();
-		$('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 29.015').attr('animation__r', 'property:rotation; dur:1000; to:0 -90 0');
-		setTimeout(function(){
-			$(".registerForm").fadeIn();
-		}, 1500);
+    reception1.addEventListener("click", function() {
+        clearInfo();
+        $('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 29.015').attr('animation__r', 'property:rotation; dur:1000; to:0 -90 0');
+        setTimeout(function() {
+            $(".registerForm").fadeIn();
+        }, 1500);
 
-	});
-	$(".registerForm .close, .enterExpo").click(function(){
-		$(".registerForm").fadeOut();
-		$('.camera1').removeAttr("animation, animation__r");
-$('.camera1').attr('animation__r', 'property:rotation; dur:500; to:0 0 0');
+    });
+    $(".registerForm .close, .enterExpo").click(function() {
+        $(".registerForm").fadeOut();
+        $('.camera1').removeAttr("animation, animation__r");
+        $('.camera1').attr('animation__r', 'property:rotation; dur:500; to:0 0 0');
 
-	});
-function clearInfo(){
-$(".expoinfo").hide().find("p").empty();
-}
- });
+    });
+    /*for recetion end*/
+
+    /*for stall1 start*/
+
+    stall1.addEventListener("mouseenter", function() {
+        $(".expoinfo").show().find("p").append("Click here to visir Stall Number 1");
+    });
+    stall1.addEventListener("mouseleave", function() {
+        clearInfo();
+    });
+    stall1.addEventListener("click", function() {
+        clearInfo();
+        $('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 11.966').attr('animation__r', 'property:rotation; dur:1000; to:0 -90 0');
+        // setTimeout(function() {
+        //     $(".registerForm").fadeIn();
+        // }, 1500);
+
+    });
+
+    function clearInfo() {
+        $(".expoinfo").hide().find("p").empty();
+    }
+});
 
 // 	var cloth = document.querySelector("a-obj-model#clothes");
 
@@ -147,4 +168,3 @@ $(".expoinfo").hide().find("p").empty();
 
 
 // });
-

@@ -157,19 +157,19 @@
     margin-bottom: 0;
 }
 
-.registerForm {
+.registerForm, .stall_info {
     position: absolute;
     top: 0px;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     overflow: auto;
     display: none;
 }
 
 .registerForm .form-wrapper {
-    width: 70%;
+    width: 40%;
     margin: 0 auto;
     background: #fff;
     padding: 50px;
