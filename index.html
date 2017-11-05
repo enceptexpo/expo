@@ -41,6 +41,16 @@
             <a-asset-item id="stall1mtl" src="img/objs/stall1/stall without blinking.mtl"></a-asset-item>
             <a-asset-item id="stall2" src="img/objs/stall2/amit final stall 2.obj"></a-asset-item>
             <a-asset-item id="stall2mtl" src="img/objs/stall2/amit final stall 2.mtl"></a-asset-item>
+            <a-asset-item id="stall3" src="img/objs/stall3/stall without blinking.obj"></a-asset-item>
+            <a-asset-item id="stall3mtl" src="img/objs/stall3/stall without blinking.mtl"></a-asset-item>
+            <a-asset-item id="stall4" src="img/objs/stall4/amit final stall 2.obj"></a-asset-item>
+            <a-asset-item id="stall4mtl" src="img/objs/stall4/amit final stall 2.mtl"></a-asset-item>
+<!--             <a-asset-item id="stall5" src="img/objs/stall4/amit final stall 2.obj"></a-asset-item>
+            <a-asset-item id="stall5mtl" src="img/objs/stall4/amit final stall 2.mtl"></a-asset-item> -->
+
+						<a-asset-item id="divider" src="img/objs/divider/Divider final.obj"></a-asset-item>
+            <a-asset-item id="dividermtl" src="img/objs/divider/Divider final.mtl"></a-asset-item>
+
             <img id="groundTexture" src="img/grass2.jpg">
             <img id="roofTexture" src="img/1.jpg">
             <img id="wallLight" src="img/wallpeper.jpeg">
@@ -119,8 +129,17 @@
         <a-obj-model dynamic-body id="gatem" src="#gate" mtl="#gatemtl" rotation="0 0 0" position="62.476 0 41.810" scale="0.4 0.4 0.4"></a-obj-model>
         <a-light type="hemisphere" color="#ffffff" position="79.806 9.5 10.931" rotation="-90 0 0" light="angle:60.47;decay:2;intensity:0.2;type:spot"></a-light>
         <a-obj-model id="stall1m" src="#stall1" mtl="#stall1mtl" rotation="0 -90 0" position="71.116 0 12.024" scale="0.5 0.5 0.5"></a-obj-model>
-        <a-obj-model id="stall2m" src="#stall2" mtl="#stall2mtl" rotation="0 90 0" position="53.097 0 7.645" scale="0.6 0.6 0.6"></a-obj-model>
-        <!-- <a-obj-model id="reception" src="#reception" mtl="#receptionmtl" rotation="0 0 0" position="0 0 0" scale="1 1 1"></a-obj-model> -->
+        <a-obj-model id="stall2m" src="#stall2" mtl="#stall2mtl" rotation="0 90 0" position="53.097 0 21.420" scale="0.6 0.6 0.6"></a-obj-model>
+        <a-obj-model id="stall3m" src="#stall3" mtl="#stall3mtl" rotation="0 90 0" position="54.22 0 8.914" scale="0.6 0.6 0.6"></a-obj-model>
+        <a-obj-model id="stall4m" src="#stall4" mtl="#stall4mtl" rotation="0 90 0" position="53.097 0 -3.824" scale="0.6 0.6 0.6"></a-obj-model>
+        <a-obj-model id="stall5m" src="#stall4" mtl="#stall4mtl" rotation="0 -90 0" position="72.061 0 -1.200" scale="0.6 0.6 0.6"></a-obj-model>
+        <a-obj-model id="stall5m" src="#stall3" mtl="#stall3mtl" rotation="0 90 0" position="54.22 0 -17.487" scale="0.6 0.6 0.6"></a-obj-model>
+
+				<a-obj-model id="dividerm" src="#divider" mtl="#dividermtl" rotation="0 0 0" position="67.298 0 4.836" scale="0.25 0.25 0.25"></a-obj-model>
+				<a-obj-model id="dividerm" src="#divider" mtl="#dividermtl" rotation="0 0 0" position="53.176 0 15.783" scale="0.25 0.25 0.25"></a-obj-model>
+				<a-obj-model id="dividerm" src="#divider" mtl="#dividermtl" rotation="0 0 0" position="53.176 0 2.050" scale="0.25 0.25 0.25"></a-obj-model>
+				<a-obj-model id="dividerm" src="#divider" mtl="#dividermtl" rotation="0 0 0" position="53.176 0 -10.340" scale="0.25 0.25 0.25"></a-obj-model>
+        <!-- <a-obj-model id="reception" src="#reception" mtl="#receptionmtl" rotation="0 0 0" position="0 0 0" scale="1 1 1"></a-obj-model> -->stall4
         <a-cylinder static-body id="ground" src="#groundTexture" radius="100" height="0.1" repeat="100 100"></a-cylinder>
         <a-plane src="#wallLight" repeat="10 5" height="6" width="150.000" position="-77.910 10 5.232" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
         <a-plane dynamic-body src="#wallLight" repeat="10 5" height="6" width="150.000" position="78.218 10 1.921" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
@@ -130,7 +149,7 @@
         <!--  <a-plane color="red" height="4.900" width="17.430" position="-7.767 0.270 160.484" material="side:double"></a-plane> -->
         <a-plane color="red" height="3.5" width="100" position="62.545 0.090 8.987" rotation="90 90 0" material="side:double"></a-plane>
         <a-camera class="camera1" position="62.620 1.6 50.045" rotation="0 0 0" look-controls="reverseMouseDrag:true">
-            <a-cursor color="#ffffff"></a-cursor>
+            <a-cursor color="#000000"></a-cursor>
         </a-camera>
         <!-- <a-box color="tomato" depth="2" height="4" width="0.5"></a-box> -->
         <a-light type="hemisphere" color="#ffffff" position="0 100 0"></a-light>
@@ -144,19 +163,19 @@
     <!-- <div class="loading">
   <h1>LOADING..</h1>
 </div> -->
-    <div class="stall_info">
+    <div class="stall_info1 stall_info">
         <div class="left_window tabs">
             <ul>
-                <li><a href="#" data-tab="about_us">About us<i class="fa fa-users" aria-hidden="true"></i></a></li>
-                <li><a href="#" data-tab="offer">Offers & Discount<i class="fa fa-tags" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-tab="about_us1">About us<i class="fa fa-users" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-tab="offer1">Offers & Discount<i class="fa fa-tags" aria-hidden="true"></i></a></li>
                 <li><a href="#">Chat<i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                <li><a href="#" data-tab="network">Network<i class="fa fa-snowflake-o" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-tab="network1">Network<i class="fa fa-snowflake-o" aria-hidden="true"></i></a></li>
                 <li><a href="pdf/INWE Brochure 2.pdf" target="_blank">Download Brochure<i class="fa fa-download" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.invisionmedi.com/contactus.htm" target="_blank">Send Enquiry<i class="fa fa-envelope" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <div class="center_window">
-            <div id="network">
+            <div id="network1" class="network">
                 <h2>Netwok</h2>
                 <ul style="width: 100%">
                     <li><a href="http://www.infalife.net/" target="_blank"><img alt="Infalife" src="http://www.invisionmedi.com/images/infalife.jpg" style="width: 143px; height: 61px;"></a></li>
@@ -171,7 +190,7 @@
                 </ul>
                 <div class="clearfix"></div>
             </div>
-            <div id="about_us">
+            <div id="about_us1" class="about_us">
                 <h2>About us</h2>
                 <dl>
                     <dt>PURSUIT OF EXCELLENCE</dt>
@@ -180,23 +199,26 @@
                 <p><b>Our People</b> Excellent teamwork and good rapport forms the backbone of Invision family. Our team adds extra effort and go extra miles to deliver brilliant healthcare solutions. They are continuously motivated to achieve excellence and set new benchmarks.</p>
                 <p><b>Our Philosophy</b> Achieving Customer satisfaction is the fundamental to our business. We aim at providing products &amp; services of the highest quality and ensure profitable and constant growth in it. We manage our operations with giving high concerns for safety and environment. We Practice dignity and equity among ourselves and provide opportunities for our people to realize their potentiality and work on it.</p>
             </div>
-            <div id="products">
+            <div id="products1" class="products">
                 <h2>Products</h2>
                 <ul>
                     <li>
                         <a href="http://www.invisionmedi.com/category/antacids-anti-flatulants-anti-ulcerants-anti-emetic.htm">
-                                                        <img src="http://www.invisionmedi.com/images_category/17.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl00_lblicategorymagename" class="">Antacids, Anti flatulants, Anti Ulcerants &amp; Anti Emetic</span></a>
+	                        <img src="http://www.invisionmedi.com/images_category/17.jpg" alt="" height="100px" width="230px">
+	                          <span id="ctl00_ContentPlaceHolder1_datalists_ctl00_lblicategorymagename" class="">Antacids, Anti flatulants, Anti Ulcerants &amp; Anti Emetic</span>
+	                        </a>
                     </li>
                     <li>
                         <a href="http://www.invisionmedi.com/category/anti-malarial.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/7.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl01_lblicategorymagename" class="">Anti- Malarial</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl01_lblicategorymagename" class="">Anti- Malarial</span>
+                                                              </a>
                     </li>
                     <li>
                         <a href="http://www.invisionmedi.com/category/antiallergic-antipyretic-anticold-antiasthamatic.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/6.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl02_lblicategorymagename" class="">Anti-allergic, Anti-Pyretic &amp; Anti-Cold, Anti-Asthamatic</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl02_lblicategorymagename" class="">Anti-allergic, Anti-Pyretic &amp; Anti-Cold, Anti-Asthamatic</span>
+                                                              </a>
                     </li>
                     </td>
                     </tr>
@@ -205,100 +227,112 @@
                             <li>
                                 <a href="http://www.invisionmedi.com/category/antiinflammatory-analgesic-antispasmodic.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/8.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl03_lblicategorymagename" class="">Anti-inflammatory, Analgesic &amp; Anti-Spasmodic</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl03_lblicategorymagename" class="">Anti-inflammatory, Analgesic &amp; Anti-Spasmodic</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/antibiotics.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/20.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl04_lblicategorymagename" class="">Antibiotics</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl04_lblicategorymagename" class="">Antibiotics</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/cardiac-antidiabetic.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/9.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl05_lblicategorymagename" class="">Cardiac &amp; Anti-Diabetic</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl05_lblicategorymagename" class="">Cardiac &amp; Anti-Diabetic</span>
+                                                              </a>
                             </li>
-
                             <li>
                                 <a href="http://www.invisionmedi.com/category/dental-range.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/1.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl06_lblicategorymagename" class="">Dental Range</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl06_lblicategorymagename" class="">Dental Range</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/eye-ear-drops.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/2.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl07_lblicategorymagename" class="">Eye / Ear Drops</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl07_lblicategorymagename" class="">Eye / Ear Drops</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/fertility-booster-sproutogen.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/21.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl08_lblicategorymagename" class="">Fertility Booster (Sproutogen)</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl08_lblicategorymagename" class="">Fertility Booster (Sproutogen)</span>
+                                                              </a>
                             </li>
-
                             <li>
                                 <a href="http://www.invisionmedi.com/category/gynae-range.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/5.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl09_lblicategorymagename" class="">Gynae Range</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl09_lblicategorymagename" class="">Gynae Range</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/hepatoprotectives.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/10.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl10_lblicategorymagename" class="">Hepatoprotectives</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl10_lblicategorymagename" class="">Hepatoprotectives</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/herbal-products.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/11.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl11_lblicategorymagename" class="">Herbal Products</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl11_lblicategorymagename" class="">Herbal Products</span>
+                                                              </a>
                             </li>
-
                             <li>
                                 <a href="http://www.invisionmedi.com/category/infusion-iv-parenterals.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/13.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl12_lblicategorymagename" class="">Infusion (iv) (parenterals)</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl12_lblicategorymagename" class="">Infusion (iv) (parenterals)</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/miscellaneous.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/15.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl13_lblicategorymagename" class="">Miscellaneous</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl13_lblicategorymagename" class="">Miscellaneous</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/nasal-drops.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/18.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl14_lblicategorymagename" class="">Nasal Drops</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl14_lblicategorymagename" class="">Nasal Drops</span>
+                                                              </a>
                             </li>
-
                             <li>
                                 <a href="http://www.invisionmedi.com/category/ointment-gel.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/3.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl15_lblicategorymagename" class="">Ointment &amp; Gel</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl15_lblicategorymagename" class="">Ointment &amp; Gel</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/paediatrics.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/14.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl16_lblicategorymagename" class="">Paediatrics</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl16_lblicategorymagename" class="">Paediatrics</span>
+                                                              </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/pre-pro-biotics-rehydration-salts.htm">
                                                         <img src="http://www.invisionmedi.com/images_category/16.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl17_lblicategorymagename" class="">Pre &amp; Pro Biotics &amp; Rehydration Salts</span></a>
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl17_lblicategorymagename" class="">Pre &amp; Pro Biotics &amp; Rehydration Salts</span>
+                                                              </a>
                             </li>
-
                             <li>
                                 <a href="http://www.invisionmedi.com/category/urology.htm">
-                                                        <img src="http://www.invisionmedi.com/images_category/19.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl18_lblicategorymagename" class="">Urology</span></a>
+                                  <img src="http://www.invisionmedi.com/images_category/19.jpg" alt="" height="100px" width="230px">
+                                    <span id="ctl00_ContentPlaceHolder1_datalists_ctl18_lblicategorymagename" class="">Urology</span>
+                                  </a>
                             </li>
                             <li>
                                 <a href="http://www.invisionmedi.com/category/vitamins-minerals-proteins-aminoacids-other-nutritional-supplements.htm">
-                                                        <img src="http://www.invisionmedi.com/images_category/12.jpg" alt="" height="100px" width="230px">
-                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl19_lblicategorymagename" class="">Vitamins, Minerals, Proteins, Amino-acids, Other Nutritional Supplements</span></a>
+                                  <img src="http://www.invisionmedi.com/images_category/12.jpg" alt="" height="100px" width="230px">
+                                    <span id="ctl00_ContentPlaceHolder1_datalists_ctl19_lblicategorymagename" class="">Vitamins, Minerals, Proteins, Amino-acids, Other Nutritional Supplements</span>
+                                  </a>
                             </li>
                 </ul>
             </div>
-            <div id="offer">
+            <div id="offer1" class="offer">
                 <h2>Contact Us</h2>
                 <img src="img/coupon.jpg" alt="">
             </div>
-            <div id="contact_us">
+            <div id="contact_us1" class="contact_us">
                 <h2>Contact Us</h2>
                 <p><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp; &nbsp;Invision Medi Sciences Pvt. Ltd New No.3, Old No.231, 12th Cross, Wilson Garden, Bangalore- 560027.</p>
                 <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; &nbsp;<a href="mailto:enquiry@invisionmedi.com">enquiry@invisionmedi.com</a>
@@ -309,14 +343,101 @@
         </div>
         <div class="right_window tabs">
             <ul>
-                <li><a href="#" data-tab="products">Product Range<i class="fa fa-th-large" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-tab="products1">Product Range<i class="fa fa-th-large" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.invisionmedi.com/contactus.htm" target="_blank">Be a Partner<i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
                 <li><a href="#">Video Call<i class="fa fa-video-camera" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.invisionmedi.com/contactus.htm" target="_blank">Request Sample<i class="fa fa-square" aria-hidden="true"></i></a></li>
                 <li><a href="http://www.invisionmedi.com" target="_blank">Visit Website<i class="fa fa-hand-pointer-o" aria-hidden="true"></i></a></li>
-                <li><a href="#" data-tab="contact_us">Contact us<i class="fa fa-phone-square" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-tab="contact_us1">Contact us<i class="fa fa-phone-square" aria-hidden="true"></i></a></li>
             </ul>
-            <button class="exitstall btn btn-danger">Exit Stall</button>
+            <button class="exitstall exitstall1 btn btn-danger">Exit Stall</button>
+        </div>
+    </div>
+
+
+
+    <div class="stall_info2 stall_info">
+        <div class="left_window tabs">
+            <ul>
+                <li><a href="#" data-tab="about_us2">About us<i class="fa fa-users" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-tab="offer2">Offers & Discount<i class="fa fa-tags" aria-hidden="true"></i></a></li>
+                <li><a href="#">Chat<i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-tab="network2">Network<i class="fa fa-snowflake-o" aria-hidden="true"></i></a></li>
+                <li><a href="pdf/INWE Brochure 2.pdf" target="_blank">Download Brochure<i class="fa fa-download" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.influxhealthcare.com/contact/" target="_blank">Send Enquiry<i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="center_window">
+            <div id="network2" class="network">
+                <h2>Netwok</h2>
+                <ul style="width: 100%">
+                    <li><a href="http://www.influxhealthcare.com/dietary-nutrition-supplements/" target="_blank"><img alt="Infalife" src="http://www.influxhealthcare.com/wp-content/themes/influx/sources/images/product_categories/nutrition_img.png" style="width: 143px; height: 61px;"></a></li>
+                    <li><a href="http://www.influxhealthcare.com/crop-nutrition/" target="_blank"><img alt="idealis" src="http://www.influxhealthcare.com/wp-content/themes/influx/sources/images/product_categories/ayurvedic_img.png" style="height:61px; width:143px;"></a></li>
+                    <li><a href="http://www.influxhealthcare.com/animal-feed-supplement/" target="_blank"><img alt="ikeroirdorf" src="http://www.influxhealthcare.com/wp-content/themes/influx/sources/images/product_categories/veteinary_img.png" style="width: 143px; height: 61px;"></a>&nbsp;</li>
+
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div id="about_us2" class="about_us">
+                <h2>About us</h2>
+						<p>Influx Group was started in 2003 in Mumbai (India) with a small budget and a very small team with one common vision to  achieve more.</p>
+
+						<p>Started with a very Micro plant a decade ago with intentions and will to grow , Influx have now transpired to 25000 sqft plant in palghar, Maharashtra with a thrust to expand to 38000 sqft in coming years. Our manufacturing plant is equipped with GMP, HACCP, ISO 22000, ISO 14000 with well equipped machinery, Quality control department and competent manpower.</p>
+
+								<p>We Welcome you all to the world of Health and Wellness &amp; expand your association with us.</p>
+
+								<p>When we think of past, I feel ecstatic that within a span of a decade we have travelled many miles and hurdles.</p>
+								<p>Our aim is to produce innovative range of products with good concept, quality and build good network of customer. We have our large Clients base in PAN INDIA and have presence in 4 continents.</p>
+								<p>Our Major business is to do Contract manufacturing, Franchisee &amp; Marketing of Nutraceuticals, Ayurvedic and Veterinary Feed Supplements. We can produce economic batch sizes with competitive rates for various categories of products as Soft Gelatin, Tablets, Capsules, Liquid Orals, Oral Powders, Creams, Gels, Ointments, External Oils etc.</p>
+
+            </div>
+            <div id="products2" class="products">
+                <h2>Products</h2>
+                <ul>
+                    <li>
+                        <a href="http://www.influxhealthcare.com/category/marketing-and-franchise/ayurvedic/">
+	                        <img src="http://www.influxhealthcare.com/wp-content/themes/influx/sources/images/product_categories/ayurvedic_img.png" alt="" height="100px" width="230px">
+	                          <span id="ctl00_ContentPlaceHolder1_datalists_ctl00_lblicategorymagename" class="">Ayurvedic</span>
+	                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.influxhealthcare.com/category/marketing-and-franchise/nutraceuticals-dietary-supplements/">
+                                                        <img src="http://www.influxhealthcare.com/wp-content/themes/influx/sources/images/product_categories/nutrition_img.png" alt="" height="100px" width="230px">
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl01_lblicategorymagename" class="">Nutraceuticals / Dietary Supplements</span>
+                                                              </a>
+                    </li>
+                    <li>
+                        <a href="http://www.influxhealthcare.com/category/marketing-and-franchise/gym-sports-supplements/">
+                                                        <img src="http://www.influxhealthcare.com/wp-content/themes/influx/sources/images/product_categories/fitness_img.png" alt="" height="100px" width="230px">
+                                                                <span id="ctl00_ContentPlaceHolder1_datalists_ctl02_lblicategorymagename" class="">Gym / Sports Supplementsc</span>
+                                                              </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="offer2" class="offer">
+                <h2>Contact Us</h2>
+                <img src="img/coupon.jpg" alt="">
+            </div>
+            <div id="contact_us2" class="contact_us">
+                <h2>Contact Us</h2>
+                <p><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp; &nbsp;2, Unique Compound, Gulshan Nagar, 90 ft Road, Gandhi Nagar, Kandivali (West), Mumbai - 400067, Maharashtra.</p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp; &nbsp;<a href="mailto:mailinflux@gmail.com">mailinflux@gmail.com</a>
+                    <br/><a href="mailto:contactinflux@yahoo.com">contactinflux@yahoo.com</a></p>
+                <p><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;&nbsp;Mobile No:  99698 05805 /  80803 33319</p>
+                <p><i class="fa fa-whatsapp" aria-hidden="true"></i>&nbsp;&nbsp;Whatsapp - No: 72080 33442</p>
+            </div>
+        </div>
+        <div class="right_window tabs">
+            <ul>
+                <li><a href="#" data-tab="products2">Product Range<i class="fa fa-th-large" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.influxhealthcare.com/contact/" target="_blank">Be a Partner<i class="fa fa-handshake-o" aria-hidden="true"></i></a></li>
+                <li><a href="#">Video Call<i class="fa fa-video-camera" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.influxhealthcare.com/contact/" target="_blank">Request Sample<i class="fa fa-square" aria-hidden="true"></i></a></li>
+                <li><a href="http://www.influxhealthcare.com" target="_blank">Visit Website<i class="fa fa-hand-pointer-o" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-tab="contact_us2">Contact us<i class="fa fa-phone-square" aria-hidden="true"></i></a></li>
+            </ul>
+            <button class="exitstall2 exitstall btn btn-danger">Exit Stall</button>
         </div>
     </div>
     <div class="header">

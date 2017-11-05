@@ -1,6 +1,11 @@
 $(document).ready(function() {
     var reception1 = document.querySelector("#receptionm");
     var stall1 = document.querySelector("#stall1m");
+    var stall2 = document.querySelector("#stall2m");
+    var stall3 = document.querySelector("#stall3m");
+    var stall4 = document.querySelector("#stall4m");
+    var stall5 = document.querySelector("#stall5m");
+    var stall6 = document.querySelector("#stall6m");
     document.querySelector('a-assets').addEventListener('loaded', function() {
         $(".bubblingG").hide();
     });
@@ -8,7 +13,6 @@ $(document).ready(function() {
     /*for recetion start*/
 
     reception1.addEventListener("mouseenter", function() {
-    		console.log("azhar");
         $(".expoinfo").show().find("p").append("Click here to register");
     });
 
@@ -46,17 +50,75 @@ $(document).ready(function() {
         $('.camera1').removeAttr("animation").removeAttr("animation__r");
         $('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 11.966').attr('animation__r', 'property:rotation; dur:1000; to:0 -90 0');
         setTimeout(function() {
-            $(".stall_info").fadeIn();
+            $(".stall_info1").fadeIn();
 
             clearInfo();
         }, 1500);
 
     });
-    $(".exitstall").click(function() {
-        $(".stall_info").fadeOut();
+    $(".exitstall1").click(function() {
+        $(".stall_info1").fadeOut();
         $('.camera1').removeAttr("animation").removeAttr("animation__r");
         $('.camera1').attr('animation', 'property:rotation; dur:500; to:0 0 0');
+        $(".center_window").hide();
+    });
+    /*for stall1 end*/
 
+    /*for stall2 start*/
+
+    stall2.addEventListener("mouseenter", function() {
+        $(".expoinfo").show().find("p").append("Click Here To Visit Stall Number 2");
+    });
+    stall2.addEventListener("mouseleave", function() {
+        clearInfo();
+    });
+    stall2.addEventListener("click", function() {
+        clearInfo();
+        $('.camera1').removeAttr("animation").removeAttr("animation__r");
+        $('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 20.723').attr('animation__r', 'property:rotation; dur:1000; to:0 90 0');
+        setTimeout(function() {
+            $(".stall_info2").fadeIn();
+
+            clearInfo();
+        }, 1500);
+
+    });
+    $(".exitstall2").click(function() {
+        $(".stall_info2").fadeOut();
+        $('.camera1').removeAttr("animation").removeAttr("animation__r");
+        $('.camera1').attr('animation', 'property:rotation; dur:500; to:0 0 0');
+        $(".center_window").hide();
+    });
+
+    /*for stall2 end*/
+
+
+    stall3.addEventListener("mouseenter", function() {
+        $(".expoinfo").show().find("p").append("Coming Soon!");
+    });
+    stall3.addEventListener("mouseleave", function() {
+        clearInfo();
+    });
+
+    stall4.addEventListener("mouseenter", function() {
+        $(".expoinfo").show().find("p").append("Coming Soon!");
+    });
+    stall4.addEventListener("mouseleave", function() {
+        clearInfo();
+    });
+
+    stall5.addEventListener("mouseenter", function() {
+        $(".expoinfo").show().find("p").append("Coming Soon!");
+    });
+    stall5.addEventListener("mouseleave", function() {
+        clearInfo();
+    });
+
+    stall6.addEventListener("mouseenter", function() {
+        $(".expoinfo").show().find("p").append("Coming Soon!");
+    });
+    stall6.addEventListener("mouseleave", function() {
+        clearInfo();
     });
 
     function clearInfo() {

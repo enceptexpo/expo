@@ -1,3 +1,6 @@
+img{
+	max-width: 100%;
+}
 .loading {
     position: absolute;
     height: 100%;
@@ -15,7 +18,9 @@
     background: #fff;
     padding-top: 25%
 }
-
+.center_window > div >h2{
+	margin-bottom: 50px;
+}
 .bubblingG span {
     display: inline-block;
     vertical-align: middle;
@@ -262,12 +267,12 @@ label {
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
-#network ul li, #products ul li {
+.network ul li, .products ul li {
     display: inline-block;
     float: left;
     margin-right: 10px;
 }
-#network ul li a, #products ul li a{
+.network ul li a, .products ul li a{
 	width: auto;
     padding: 7px 12px;
     font-size: 17px;
@@ -277,11 +282,11 @@ label {
     border-radius: 10px;
 
 }
-#products ul li a span{
+.products ul li a span{
 	display: block;
 }
-#products ul li a{
-	width: 250px;
+.products ul li a{
+	width: 250px !important;
 	height: 170px;
 	max-width: 300px;
 }
