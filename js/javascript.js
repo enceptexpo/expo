@@ -26,6 +26,7 @@ $(document).ready(function() {
         $('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 29.015').attr('animation__r', 'property:rotation; dur:1000; to:0 -90 0');
         setTimeout(function() {
             $(".registerForm").fadeIn();
+            clearInfo();
         }, 1500);
 
     });
