@@ -8,6 +8,7 @@ $(document).ready(function() {
     /*for recetion start*/
 
     reception1.addEventListener("mouseenter", function() {
+    		console.log("azhar");
         $(".expoinfo").show().find("p").append("Click here to register");
     });
 
@@ -17,6 +18,7 @@ $(document).ready(function() {
 
     reception1.addEventListener("click", function() {
         clearInfo();
+        $('.camera1').removeAttr("animation").removeAttr("animation__r");
         $('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 29.015').attr('animation__r', 'property:rotation; dur:1000; to:0 -90 0');
         setTimeout(function() {
             $(".registerForm").fadeIn();
@@ -25,8 +27,8 @@ $(document).ready(function() {
     });
     $(".registerForm .close, .enterExpo").click(function() {
         $(".registerForm").fadeOut();
-        $('.camera1').removeAttr("animation, animation__r");
-        $('.camera1').attr('animation__r', 'property:rotation; dur:500; to:0 0 0');
+        $('.camera1').removeAttr("animation").removeAttr("animation__r");
+        $('.camera1').attr('animation', 'property:rotation; dur:500; to:0 0 0');
 
     });
     /*for recetion end*/
@@ -34,24 +36,41 @@ $(document).ready(function() {
     /*for stall1 start*/
 
     stall1.addEventListener("mouseenter", function() {
-        $(".expoinfo").show().find("p").append("Click here to visir Stall Number 1");
+        $(".expoinfo").show().find("p").append("Click here to visit Stall Number 1");
     });
     stall1.addEventListener("mouseleave", function() {
         clearInfo();
     });
     stall1.addEventListener("click", function() {
         clearInfo();
-        $('.camera1').removeAttr("animation, animation__r");
+        $('.camera1').removeAttr("animation").removeAttr("animation__r");
         $('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 11.966').attr('animation__r', 'property:rotation; dur:1000; to:0 -90 0');
-        // setTimeout(function() {
-        //     $(".registerForm").fadeIn();
-        // }, 1500);
+        setTimeout(function() {
+            $(".stall_info").fadeIn();
+
+            clearInfo();
+        }, 1500);
+
+    });
+    $(".exitstall").click(function() {
+        $(".stall_info").fadeOut();
+        $('.camera1').removeAttr("animation").removeAttr("animation__r");
+        $('.camera1').attr('animation', 'property:rotation; dur:500; to:0 0 0');
 
     });
 
     function clearInfo() {
         $(".expoinfo").hide().find("p").empty();
     }
+    $(".stall_info .tabs ul li a").click(function(){
+    	$(".center_window, .center_window > div").hide();
+    	$(".stall_info .tabs ul li a").removeClass("active");
+    	$(this).addClass("active");
+    	var opentab = $(this).attr("data-tab");
+    	console.log(opentab)
+    	$(".center_window").show();
+    	$("#"+opentab).show();
+    });
 });
 
 // 	var cloth = document.querySelector("a-obj-model#clothes");
