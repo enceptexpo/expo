@@ -41,6 +41,7 @@ $(document).ready(function() {
     });
     stall1.addEventListener("click", function() {
         clearInfo();
+        $('.camera1').removeAttr("animation, animation__r");
         $('.camera1').attr('animation', 'property:position; dur:1000; to:62.62 3.2 11.966').attr('animation__r', 'property:rotation; dur:1000; to:0 -90 0');
         // setTimeout(function() {
         //     $(".registerForm").fadeIn();
