@@ -1,0 +1,196 @@
+.loading {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.bubblingG {
+    text-align: center;
+    margin: auto;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    padding-top: 25%
+}
+
+.bubblingG span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin: 24px auto;
+    background: rgb(0, 0, 0);
+    border-radius: 49px;
+    -o-border-radius: 49px;
+    -ms-border-radius: 49px;
+    -webkit-border-radius: 49px;
+    -moz-border-radius: 49px;
+    animation: bubblingG 1.5s infinite alternate;
+    -o-animation: bubblingG 1.5s infinite alternate;
+    -ms-animation: bubblingG 1.5s infinite alternate;
+    -webkit-animation: bubblingG 1.5s infinite alternate;
+    -moz-animation: bubblingG 1.5s infinite alternate;
+}
+
+#bubblingG_1 {
+    animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+}
+
+#bubblingG_2 {
+    animation-delay: 0.45s;
+    -o-animation-delay: 0.45s;
+    -ms-animation-delay: 0.45s;
+    -webkit-animation-delay: 0.45s;
+    -moz-animation-delay: 0.45s;
+}
+
+#bubblingG_3 {
+    animation-delay: 0.9s;
+    -o-animation-delay: 0.9s;
+    -ms-animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+}
+
+
+
+@keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(0, 0, 0);
+        transform: translateY(0);
+    }
+
+    100% {
+        width: 23px;
+        height: 23px;
+        background-color: rgb(255, 255, 255);
+        transform: translateY(-20px);
+    }
+}
+
+@-o-keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(0, 0, 0);
+        -o-transform: translateY(0);
+    }
+
+    100% {
+        width: 23px;
+        height: 23px;
+        background-color: rgb(255, 255, 255);
+        -o-transform: translateY(-20px);
+    }
+}
+
+@-ms-keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(0, 0, 0);
+        -ms-transform: translateY(0);
+    }
+
+    100% {
+        width: 23px;
+        height: 23px;
+        background-color: rgb(255, 255, 255);
+        -ms-transform: translateY(-20px);
+    }
+}
+
+@-webkit-keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(0, 0, 0);
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        width: 23px;
+        height: 23px;
+        background-color: rgb(255, 255, 255);
+        -webkit-transform: translateY(-20px);
+    }
+}
+
+@-moz-keyframes bubblingG {
+    0% {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(0, 0, 0);
+        -moz-transform: translateY(0);
+    }
+
+    100% {
+        width: 23px;
+        height: 23px;
+        background-color: rgb(255, 255, 255);
+        -moz-transform: translateY(-20px);
+    }
+}
+
+.expoinfo {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #eee;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 15px;
+}
+
+.expoinfo p {
+    margin-bottom: 0;
+}
+
+.registerForm {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    display: none;
+}
+
+.registerForm .form-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+}
+
+.close {
+    font-size: 40px;
+}
+
+button.enterExpo.btn.btn-info {
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+}
+.header{
+
+}
+@media (max-width: 767px) {
+    .registerForm .form-wrapper {
+        width: 90%;
+        padding: 15px;
+    }
+}
