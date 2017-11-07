@@ -34,11 +34,16 @@
             <!-- <a-asset-item id="store1" src="img/obj/stores/crtshsp1.obj"></a-asset-item>
 
       <a-asset-item id="store1mtl" src="img/obj/stores/crtshsp1.mtl"></a-asset-item> -->
-            <a-asset-item id="reception" src="img/objs/reception/amit desk.obj"></a-asset-item>
-            <a-asset-item id="receptionmtl" src="img/objs/reception/amit desk.mtl"></a-asset-item>
-            <a-asset-item id="gate" src="img/objs/gate/gate.obj"></a-asset-item>
-            <a-asset-item id="gatemtl" src="img/objs/gate/gate.mtl"></a-asset-item>
+            <a-asset-item id="reception" src="img/objs/reception/desk.obj"></a-asset-item>
+            <a-asset-item id="receptionmtl" src="img/objs/reception/desk.mtl"></a-asset-item>
+            <a-asset-item id="gate" src="img/objs/gate/Gate.obj"></a-asset-item>
+            <a-asset-item id="gatemtl" src="img/objs/gate/Gate.mtl"></a-asset-item>
 
+						<a-asset-item id="stand1" src="img/objs/stand/standee01.obj"></a-asset-item>
+            <a-asset-item id="stand1mtl" src="img/objs/stand/standee01.mtl"></a-asset-item>
+
+            <a-asset-item id="stand2" src="img/objs/stand/standee001.obj"></a-asset-item>
+            <a-asset-item id="stand2mtl" src="img/objs/stand/standee001.mtl"></a-asset-item>
 
             <a-asset-item id="stall1" src="img/objs/stall1/01.obj"></a-asset-item>
             <a-asset-item id="stall1mtl" src="img/objs/stall1/01.mtl"></a-asset-item>
@@ -129,9 +134,15 @@
 
     </a-entity> -->
     <a-sound src="src: url(audio/background.mp3)" volume="30" loop="true" autoplay="true" position="0 2 5"></a-sound>
-        <a-obj-model id="receptionm" src="#reception" mtl="#receptionmtl" rotation="0 -90.020 0" position="71.513 2.920 28.572" scale="2 2 2"></a-obj-model>
+        <a-obj-model id="receptionm" src="#reception" mtl="#receptionmtl" rotation="0 -90.020 0" position="71.513 0.8 28.572" scale="0.08 0.08 0.08"></a-obj-model>
         <a-obj-model id="gatem" src="#gate" mtl="#gatemtl" rotation="0 0 0" position="62.476 0 41.810" scale="0.4 0.4 0.4"></a-obj-model>
         <a-light type="hemisphere" color="#ffffff" position="79.806 9.5 10.931" rotation="-90 0 0" light="angle:60.47;decay:2;intensity:0.2;type:spot"></a-light>
+
+				<a-obj-model id="stand1m" src="#stand1" mtl="#stand1mtl" rotation="0 -50 0" position="72.275 0 44.115" scale="0.15 0.15 0.15"></a-obj-model>
+
+				<a-obj-model id="stand2m" src="#stand2" mtl="#stand2mtl" rotation="0 50 0" position="52.788 2.470 43.972" scale="0.08 0.08 0.08"></a-obj-model>
+
+
         <a-obj-model id="stall1m" src="#stall1" mtl="#stall1mtl" rotation="0 -90 0" position="71.116 0 12.024" scale="0.5 0.5 0.5"></a-obj-model>
         <a-obj-model id="stall2m" src="#stall2" mtl="#stall2mtl" rotation="0 90 0" position="53.097 0 21.420" scale="0.6 0.6 0.6"></a-obj-model>
         <a-obj-model id="stall3m" src="#stall1" mtl="#stall3mtl" rotation="0 90 0" position="54.22 0 8.914" scale="0.6 0.6 0.6"></a-obj-model>
@@ -153,7 +164,7 @@
         <a-plane src="#roofTexture" height="120" rotation="90 0 0" repeat="5 5" width="160" position="0 20 0" material="side:double" geometry="height:125;width:165"></a-plane>
         <!--  <a-plane color="red" height="4.900" width="17.430" position="-7.767 0.270 160.484" material="side:double"></a-plane> -->
         <a-plane color="red" height="3.5" width="100" position="62.545 0.090 8.987" rotation="90 90 0" material="side:double"></a-plane>
-        <a-camera universal-controls class="camera1" position="62.620 1.6 50.045" rotation="0 0 0"  mouse-controls="pointerlockEnabled:false">
+        <a-camera universal-controls class="camera1" position="62.620 1.6 53.045" rotation="0 0 0"  mouse-controls="pointerlockEnabled:false">
             <a-cursor color="#000000"></a-cursor>
         </a-camera>
         <!-- <a-camera universal-controls class="camera1" position="62.620 1.6 50.045" rotation="0 0 0">
