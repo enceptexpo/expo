@@ -12,8 +12,8 @@ newmtl 01___Default
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka standee01.jpg
-	map_Kd standee01.jpg
+	map_Ka Optimized-standee01.jpg
+	map_Kd Optimized-standee01.jpg
 
 newmtl 02___Default
 	Ns 10.0000
