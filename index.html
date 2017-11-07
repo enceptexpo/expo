@@ -2,18 +2,19 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/aframe.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/animation.js"></script>
-    <script type="js/physics.js"></script>
+    <!-- <script type="js/physics.js"></script> -->
     <script src="js/aframe-text-geometry-component.min.js"></script>
+    <!-- <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.4/dist/aframe-extras.min.js"></script> -->
 </head>
 
 <body>
-    <a-scene>
+    <a-scene physics>
         <a-assets>
             <!-- <a-asset-item" id="wall" src="img/wall.jpg"></a-asset-item>
 
@@ -37,8 +38,8 @@
             <a-asset-item id="receptionmtl" src="img/objs/reception/amit desk.mtl"></a-asset-item>
             <a-asset-item id="gate" src="img/objs/gate/gate.obj"></a-asset-item>
             <a-asset-item id="gatemtl" src="img/objs/gate/gate.mtl"></a-asset-item>
-            <a-asset-item id="stall1" src="img/objs/stall1/stall without blinking.obj"></a-asset-item>
-            <a-asset-item id="stall1mtl" src="img/objs/stall1/stall without blinking.mtl"></a-asset-item>
+            <a-asset-item id="stall1" src="img/objs/stall1/new_edited_01.obj"></a-asset-item>
+            <a-asset-item id="stall1mtl" src="img/objs/stall1/new_edited_01.mtl"></a-asset-item>
             <a-asset-item id="stall2" src="img/objs/stall2/amit final stall 2.obj"></a-asset-item>
             <a-asset-item id="stall2mtl" src="img/objs/stall2/amit final stall 2.mtl"></a-asset-item>
             <a-asset-item id="stall3" src="img/objs/stall3/stall without blinking.obj"></a-asset-item>
@@ -125,8 +126,9 @@
         <!-- <a-entity class="text" visible="true" text-geometry="value:CLOTHES; font:#font; width:5" position="0.3 1.10 -3.87" material="color:#ffffff;">
 
     </a-entity> -->
+    <a-sound src="src: url(audio/background.mp3)" volume="30" loop="true" autoplay="true" position="0 2 5"></a-sound>
         <a-obj-model id="receptionm" src="#reception" mtl="#receptionmtl" rotation="0 -90.020 0" position="71.513 2.920 28.572" scale="2 2 2"></a-obj-model>
-        <a-obj-model dynamic-body id="gatem" src="#gate" mtl="#gatemtl" rotation="0 0 0" position="62.476 0 41.810" scale="0.4 0.4 0.4"></a-obj-model>
+        <a-obj-model static-body id="gatem" src="#gate" mtl="#gatemtl" rotation="0 0 0" position="62.476 0 41.810" scale="0.4 0.4 0.4"></a-obj-model>
         <a-light type="hemisphere" color="#ffffff" position="79.806 9.5 10.931" rotation="-90 0 0" light="angle:60.47;decay:2;intensity:0.2;type:spot"></a-light>
         <a-obj-model id="stall1m" src="#stall1" mtl="#stall1mtl" rotation="0 -90 0" position="71.116 0 12.024" scale="0.5 0.5 0.5"></a-obj-model>
         <a-obj-model id="stall2m" src="#stall2" mtl="#stall2mtl" rotation="0 90 0" position="53.097 0 21.420" scale="0.6 0.6 0.6"></a-obj-model>
@@ -142,21 +144,26 @@
         <!-- <a-obj-model id="reception" src="#reception" mtl="#receptionmtl" rotation="0 0 0" position="0 0 0" scale="1 1 1"></a-obj-model> -->stall4
         <a-cylinder static-body id="ground" src="#groundTexture" radius="100" height="0.1" repeat="100 100"></a-cylinder>
         <!-- <a-plane src="#wallLight" repeat="10 5" height="6" width="150.000" position="-77.910 10 5.232" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane> -->
-        <a-plane src="#wallLight" repeat="10 5" height="6" width="150.000" position="43.722 10 5.232" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
-        <a-plane dynamic-body src="#wallLight" repeat="10 5" height="6" width="150.000" position="78.218 10 1.921" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
-        <a-plane src="#wallLight" repeat="15 7" height="6" width="200.000" position="2.334 10 58.442" material="side:double" geometry="height:20;width:200"></a-plane>
-        <a-plane src="#wallLight" repeat="15 7" height="6" width="200" position="9.926 10 -55.790" material="side:double" geometry="height:20;width:200"></a-plane>
-        <a-plane src="#roofTexture" height="120" rotation="90 0 0" repeat="5 5" width="160" position="0 20 0" material="side:double" geometry="height:125;width:165"></a-plane>
+        <a-plane static-body src="#wallLight" repeat="10 5" height="6" width="150.000" position="43.722 10 5.232" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
+        <a-plane static-body src="#wallLight" repeat="10 5" height="6" width="150.000" position="78.218 10 1.921" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
+        <a-plane static-body src="#wallLight" repeat="15 7" height="6" width="200.000" position="2.334 10 58.442" material="side:double" geometry="height:20;width:200"></a-plane>
+        <a-plane static-body src="#wallLight" repeat="15 7" height="6" width="200" position="9.926 10 -55.790" material="side:double" geometry="height:20;width:200"></a-plane>
+        <a-plane static-body src="#roofTexture" height="120" rotation="90 0 0" repeat="5 5" width="160" position="0 20 0" material="side:double" geometry="height:125;width:165"></a-plane>
         <!--  <a-plane color="red" height="4.900" width="17.430" position="-7.767 0.270 160.484" material="side:double"></a-plane> -->
         <a-plane color="red" height="3.5" width="100" position="62.545 0.090 8.987" rotation="90 90 0" material="side:double"></a-plane>
-        <a-camera class="camera1" position="62.620 1.6 50.045" rotation="0 0 0" look-controls="reverseMouseDrag:true">
+        <a-camera universal-controls kinematic-body class="camera1" position="62.620 1.6 50.045" rotation="0 0 0">
             <a-cursor color="#000000"></a-cursor>
         </a-camera>
         <!-- <a-box color="tomato" depth="2" height="4" width="0.5"></a-box> -->
-        <a-light type="hemisphere" color="#ffffff" position="0 100 0"></a-light>
+        <a-box color="#39BB82"
+             width="15" height="5" depth="3"
+             position="8 2.5 -5"
+             static-body></a-box>
+        <a-light type="ambient" color="#bbb" position="0 0 0"></a-light>
         <a-light type="hemisphere" color="#ffffff" position="79.806 9.500 27.413" rotation="-90 0 0" light="angle:60.47;decay:2;intensity:0.2;type:spot"></a-light>
         <a-light type="hemisphere" color="#ffffff" position="56.06 5.657 43.418" rotation="-90 0 0" light="angle:60.47;intensity:0.19;type:spot"></a-light>
         <a-light type="hemisphere" color="#ffffff" position="69.657 6.544 43.418" rotation="-90 0 0" light="angle:60.47;intensity:0.18999999999999997;type:spot"></a-light>
+        <a-light position="62.228 22.77 55.447" rotation="0 0 0" light="angle:60.47;color:#ccc;intensity:0.5;type:point"></a-light>
         <!-- <a-entity position="-33.797 10.320 48.091" light="distance:1;intensity:0.5;type:ambient"></a-entity> -->
         <!-- <a-entity position="-33.797 4.600 48.091" light="distance:1;intensity:0.7;type:ambient"></a-entity> -->
         <a-sky src="#sky" radius="100"></a-sky>
