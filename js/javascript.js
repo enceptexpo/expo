@@ -34,7 +34,10 @@ $(document).ready(function() {
         $(".registerForm").fadeOut();
         $('.camera1').removeAttr("animation").removeAttr("animation__r");
         $('.camera1').attr('animation', 'property:rotation; dur:500; to:0 0 0');
-        $('.camera1').removeAttr("animation").removeAttr("animation__r");
+        setTimeout(function(){
+        	$('.camera1').removeAttr("animation").removeAttr("animation__r");
+        },600);
+
 
     });
     /*for recetion end*/
@@ -63,7 +66,9 @@ $(document).ready(function() {
         $('.camera1').removeAttr("animation").removeAttr("animation__r");
         $('.camera1').attr('animation', 'property:rotation; dur:500; to:0 0 0');
         $(".center_window").hide();
-        $('.camera1').removeAttr("animation").removeAttr("animation__r");
+        setTimeout(function(){
+        	$('.camera1').removeAttr("animation").removeAttr("animation__r");
+        },600);
 
     });
     /*for stall1 end*/
@@ -92,7 +97,9 @@ $(document).ready(function() {
         $('.camera1').removeAttr("animation").removeAttr("animation__r");
         $('.camera1').attr('animation', 'property:rotation; dur:500; to:0 0 0');
         $(".center_window").hide();
-        $('.camera1').removeAttr("animation").removeAttr("animation__r");
+        setTimeout(function(){
+        	$('.camera1').removeAttr("animation").removeAttr("animation__r");
+        },600);
     });
 
     /*for stall2 end*/
