@@ -8,9 +8,9 @@
     <script src="js/aframe.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/animation.js"></script>
-    <script type="js/physics.js"></script>
+    <!-- <script type="js/physics.js"></script> -->
     <script src="js/aframe-text-geometry-component.min.js"></script>
-    <script src="js/extra.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.4/dist/aframe-extras.min.js"></script>
 </head>
 
 <body>
@@ -155,21 +155,18 @@
 				<a-obj-model id="dividerm" src="#divider" mtl="#dividermtl" rotation="0 0 0" position="53.176 0 2.050" scale="0.25 0.25 0.25"></a-obj-model>
 				<a-obj-model id="dividerm" src="#divider" mtl="#dividermtl" rotation="0 0 0" position="53.176 0 -10.340" scale="0.25 0.25 0.25"></a-obj-model>
         <!-- <a-obj-model id="reception" src="#reception" mtl="#receptionmtl" rotation="0 0 0" position="0 0 0" scale="1 1 1"></a-obj-model> -->stall4
-        <a-cylinder static-body id="ground" src="#groundTexture" radius="100" height="0.1" repeat="100 100"></a-cylinder>
-        <!-- <a-plane static-body src="#wallLight" repeat="10 5" height="6" width="150.000" position="-77.910 10 5.232" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane> -->
-        <a-plane static-body src="#wallLight" repeat="10 5" height="6" width="150.000" position="43.722 10 5.232" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
-        <a-plane static-body src="#wallLight" repeat="10 5" height="6" width="150.000" position="78.218 10 1.921" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
-        <a-plane static-body src="#wallLight" repeat="15 7" height="6" width="200.000" position="2.334 10 58.442" material="side:double" geometry="height:20;width:200"></a-plane>
-        <a-plane static-body src="#wallLight" repeat="15 7" height="6" width="200" position="9.926 10 -55.790" material="side:double" geometry="height:20;width:200"></a-plane>
-        <a-plane static-body src="#roofTexture" height="120" rotation="90 0 0" repeat="5 5" width="160" position="0 20 0" material="side:double" geometry="height:125;width:165"></a-plane>
-        <!--  <a-plane static-body color="red" height="4.900" width="17.430" position="-7.767 0.270 160.484" material="side:double"></a-plane> -->
-        <a-plane static-body color="red" height="3.5" width="100" position="62.545 0.090 8.987" rotation="90 90 0" material="side:double"></a-plane>
-        <!-- <a-entity camera="active:false;userHeight:3.2" position="62.620 1.6 50.045" rotation="" mouse-controls="pointerlockEnabled:false">
-      </a-entity> -->
-
-        <a-entity class="camera1" universal-controls="movementEasing: 10; rotationSensitivity: 0.1" camera="userHeight:3.2" position="62.620 1.6 50.045" mouse-controls="pointerlockEnabled:false" kinematic-body="height:3.2">
-                <a-cursor color="#000000"></a-cursor>
-      </a-entity>
+        <a-cylinder id="ground" src="#groundTexture" radius="100" height="0.1" repeat="100 100"></a-cylinder>
+        <!-- <a-plane src="#wallLight" repeat="10 5" height="6" width="150.000" position="-77.910 10 5.232" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane> -->
+        <a-plane src="#wallLight" repeat="10 5" height="6" width="150.000" position="43.722 10 5.232" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
+        <a-plane src="#wallLight" repeat="10 5" height="6" width="150.000" position="78.218 10 1.921" material="side:double" rotation="0 90 0" geometry="height:20;width:150"></a-plane>
+        <a-plane src="#wallLight" repeat="15 7" height="6" width="200.000" position="2.334 10 58.442" material="side:double" geometry="height:20;width:200"></a-plane>
+        <a-plane src="#wallLight" repeat="15 7" height="6" width="200" position="9.926 10 -55.790" material="side:double" geometry="height:20;width:200"></a-plane>
+        <a-plane src="#roofTexture" height="120" rotation="90 0 0" repeat="5 5" width="160" position="0 20 0" material="side:double" geometry="height:125;width:165"></a-plane>
+        <!--  <a-plane color="red" height="4.900" width="17.430" position="-7.767 0.270 160.484" material="side:double"></a-plane> -->
+        <a-plane color="red" height="3.5" width="100" position="62.545 0.090 8.987" rotation="90 90 0" material="side:double"></a-plane>
+        <a-camera universal-controls class="camera1" position="62.620 1.6 53.045" rotation="0 0 0"  mouse-controls="pointerlockEnabled:false">
+            <a-cursor color="#000000"></a-cursor>
+        </a-camera>
         <!-- <a-camera universal-controls class="camera1" position="62.620 1.6 50.045" rotation="0 0 0">
             <a-cursor color="#000000"></a-cursor>
         </a-camera> -->
